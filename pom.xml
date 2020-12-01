@@ -14,32 +14,6 @@
         <spotless.version>1.25.1</spotless.version>
         <org.springframework.version>3.2.0.RELEASE</org.springframework.version>
     </properties>
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>spotless-maven-plugin</artifactId>
-                <configuration>
-                    <java>
-                        <googleJavaFormat>
-                            <style>GOOGLE</style>
-                            <version>1.7</version>
-                        </googleJavaFormat>
-                    </java>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                        <phase>compile</phase>
-                    </execution>
-                </executions>
-                <groupId>com.diffplug.spotless</groupId>
-                <version>${spotless.version}</version>
-            </plugin>
-        </plugins>
-    </build>
-
     <dependencies>
         <dependency>
             <groupId>org.hibernate</groupId>
